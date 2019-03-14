@@ -1,0 +1,104 @@
+*{
+    margin: 0;  
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Lora', 'Merriweather', 'sans-serif';
+}
+
+header {
+    display: flex; 
+    justify-content: flex-end;   
+    padding: 2.75vh;
+    text-size-adjust: 100%;   
+    background-image: linear-gradient(to right, slategrey, #78b2c4);    
+    color: white;
+    font-weight: 900;  
+    font-size: 20px;    
+    align-items: center;  
+}
+
+.RecentWork, .AboutMe, .ContactMe, .Home {    
+    padding-right: 3rem;
+}
+
+header input[type=text] {    
+    padding: 6px;
+    border: solid;
+    border-color: slategrey;
+    border-radius: 10px 10px 10px 10px;    
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+header a { 
+    touch-action: manipulation;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.MyPicture {
+ max-width: 100vw;
+ height: 50vh;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: slategrey; 
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    font-size-adjust: 100%;
+}
+
+footer .Github{
+    font-size: 3rem;
+}
+
+footer .Linkedin{
+    font-size: 3rem;
+}
+
+/* Recent Work Page Start*/
+.MainPhoto{
+    background-image: url(/Images/Recent_Work_Photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100%;
+}
+/* Recent Work Page End */
+
+/* Contact Me Page Start*/
+.ContactWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    background-image: linear-gradient(to bottom right, #c4b5a1,#8981a1);
+    padding-bottom: 200px;  
+    height: 90vh;    
+}
+
+.ContactPhoto {
+    background-image: url("/Images/CallMe.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    max-width: 100%;   
+}
+
+.ContactInfo {
+    list-style: none;
+    position: center;
+    font-size: 1.5rem;
+    align-self: center;
+    padding: 2rem;
+} 
+
+.ContactInfo li{
+    padding-bottom: 15px;
+}
+
