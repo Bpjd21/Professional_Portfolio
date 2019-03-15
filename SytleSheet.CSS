@@ -8,29 +8,18 @@ body{
 }
 
 header {
-    display: flex; 
-    justify-content: flex-end;   
+    display: grid;
+    grid-template-columns: 11vw 11vw 11vw auto;
     padding: 2.75vh;
-    text-size-adjust: 100%;   
-    background-image: linear-gradient(to right, slategrey, #78b2c4);    
+    text-size-adjust: 100%;  
+    position: fixed;      
     color: white;
-    font-weight: 900;  
-    font-size: 20px;    
-    align-items: center;  
+    font-weight: 1000;  
+    font-size: 20px;  
+    width: 100%; 
+    font-family: cursive;
+    padding-bottom: 10rem;
 }
-
-.RecentWork, .AboutMe, .ContactMe, .Home {    
-    padding-right: 3rem;
-}
-
-header input[type=text] {    
-    padding: 6px;
-    border: solid;
-    border-color: slategrey;
-    border-radius: 10px 10px 10px 10px;    
-    margin-right: 16px;
-    font-size: 17px;
-  }
 
 header a { 
     touch-action: manipulation;
@@ -47,13 +36,13 @@ header a {
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: slategrey; 
+    background-image: linear-gradient(to top right, grey, lightblue);
+    opacity: .8;
     color: white;
     font-size: 20px;
     align-items: center;
     font-size-adjust: 100%;
 }
-
 footer .Github{
     font-size: 3rem;
 }
@@ -61,14 +50,22 @@ footer .Github{
 footer .Linkedin{
     font-size: 3rem;
 }
+/* Index Page Start*/
 
+.IndexPhoto {
+    background-image: url("/Images/MainPagePhoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
 /* Recent Work Page Start*/
 .MainPhoto{
     background-image: url(/Images/Recent_Work_Photo.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 92vh;
     max-width: 100%;
 }
 /* Recent Work Page End */
@@ -76,10 +73,10 @@ footer .Linkedin{
 /* Contact Me Page Start*/
 .ContactWrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 2fr 1fr;   
     background-image: linear-gradient(to bottom right, #c4b5a1,#8981a1);
-    padding-bottom: 200px;  
-    height: 90vh;    
+    padding-bottom: 200px;     
+    padding-top: 4rem;  
 }
 
 .ContactPhoto {
@@ -93,7 +90,7 @@ footer .Linkedin{
 .ContactInfo {
     list-style: none;
     position: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     align-self: center;
     padding: 2rem;
 } 
