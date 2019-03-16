@@ -25,7 +25,7 @@ footer {
 }
 
 footer .CopyRight{
-    grid-column: 3;
+    grid-column: 2;
 }
 
 footer .Github{
@@ -44,15 +44,25 @@ footer a{
 /* Index Page Start*/
 
 .IndexPhoto {   
-    background-image: url("/Images/Recent_Work_Photo.jpeg");
+    background-image: url("/Images/Evolution_of_Me_3.gif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-position: center;    
+    background-position: center;   
+    padding: 0; 
+}
+
+.Evolution{
+  top: 15%;
+  font-size: 3rem;
+  color: white;
+  left: 3%;
+  z-index: 10;
+  position: fixed;
 }
 
 /* Recent Work Page Start*/
-.MainPhoto{
+.ProjectsPhoto{
     background-image: url(/Images/Recent_Work_Photo.jpeg);
     background-size: cover;
     background-position: center;
