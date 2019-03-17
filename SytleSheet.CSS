@@ -43,15 +43,6 @@ footer a{
 }
 /* Index Page Start*/
 
-.IndexPhoto {   
-    background-image: url("/Images/Evolution_of_Me_3.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center;   
-    padding: 0; 
-}
-
 .Evolution{
   top: 15%;
   font-size: 3rem;
@@ -60,6 +51,28 @@ footer a{
   z-index: 10;
   position: fixed;
 }
+
+/*Header Media Querry Start*/
+@media screen and (max-width: 600px){
+  .Evolution{
+  font-size: 1rem;
+  }
+  footer {
+    font-size: 10px; 
+  } 
+  footer .CopyRight{
+    grid-column: 2;
+  }
+  footer .Github{
+    font-size: 1.5rem;
+    color: black;
+  }
+  footer .Linkedin{
+    font-size: 1.5rem;
+    color: black;
+  }
+}
+/*End Media Querry*/
 
 /* Recent Work Page Start*/
 .ProjectsPhoto{
@@ -74,7 +87,7 @@ footer a{
 
 /* Contact Me Page Start*/
 .ContactWrapper{      
-    padding-bottom: 200px;     
+    padding-bottom: 10vh;     
     padding-top: 4rem;  
     text-align: center;
 }
@@ -94,7 +107,7 @@ footer a{
 /*Start of About Me Page*/
 
 .AboutMeWrapper{
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
     padding-top: 3rem;
 }
 
