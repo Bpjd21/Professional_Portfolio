@@ -147,21 +147,32 @@ footer a{
 
   /*End of Header*/
 /* Carousel Start */
+.MainContainer {
+  background-image: url("/Images/Recent_Work_Photo.jpeg");
+  opacity: 0.8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 4rem;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
+
 }
 
 .button {
     margin-left: 0 3%;
     width: 2rem;
     cursor: pointer;
+    font-weight: 800;
 }
 
 .button--inactive {
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 .button img {
