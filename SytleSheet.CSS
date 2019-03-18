@@ -7,8 +7,6 @@ body{
     font-family: 'Lora', 'Merriweather', 'sans-serif';
 }
 
-
-
 footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -177,16 +175,10 @@ footer a{
     }
   }
 
-  /*End of Header*/
+/*End of Header*/
+
 /* Carousel Start */
-.MainContainer {
-  background-image: url("/Images/Recent_Work_Photo.jpeg");
-  opacity: 0.8;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-bottom: 4rem;
-}
+
 
 .container {
     display: flex;
