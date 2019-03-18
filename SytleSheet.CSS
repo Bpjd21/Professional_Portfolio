@@ -60,8 +60,17 @@ footer a{
     padding: 1rem;
 }
 
-.AboutMePhoto{
+.SkillsUsed{
     text-align: center;
+    padding-bottom: 2rem;
+}
+
+.ListOfMe li {
+    list-style: none;
+}
+
+.Resume{
+    padding: 2.5rem;
 }
 
 /* Recent Work Page Start*/
@@ -218,8 +227,8 @@ footer a{
 
 .box {
 /*     margin: -1.5rem; */
-    width: 12rem;
-    height: 20rem;
+    width: 10rem;
+    height: 16rem;
     box-shadow: 0px 0px 2rem 0px #888888;
     background-color: white;
     display: flex;
