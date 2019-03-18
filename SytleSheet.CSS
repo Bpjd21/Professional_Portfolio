@@ -61,13 +61,17 @@ footer a{
   position: absolute;
 }
 
+.Skills{
+    text-align: center;
+}
+
 /* Recent Work Page Start*/
 .ProjectsPhoto{
     background-image: url(/Images/Recent_Work_Photo.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     max-width: 100%;
 }
 /* Recent Work Page End */
@@ -92,6 +96,10 @@ footer a{
 }
 
 /*Start of About Me Page*/
+
+.AboutMePhoto{
+    text-align: center;
+}
 
 /* Header */
 
@@ -233,11 +241,19 @@ footer a{
 
 .card__text-content {
     text-align: center;
-    width: 75%;
+    font-weight: 900;
 }
 
 .card__title {
     padding: 1rem;
+    font-weight: 900;
+}
+
+.card__title_recentwork{
+    background-color: lightslategray;
+    padding: 1.5rem;
+    font-weight: 1000;
+    font-size: 2rem;
 }
 
 .box--hide {
@@ -450,6 +466,15 @@ footer a{
   font-size: 2rem;
   text-align: center;
   padding-top: 1rem;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.card__title_recentwork{
+    background-color: lightslategray;
+    padding: 1.5rem;
+    font-weight: 1000;
+    font-size: 2rem;
 }
 
 }
