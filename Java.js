@@ -53,3 +53,62 @@ function myFunction() {
     }, 500);
     
     }
+
+    //Modal Box//
+    var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+    //Modal Box2//
+    var modal2 = document.querySelector(".modal2");
+    var trigger2 = document.querySelector(".trigger2");
+    var closeButton2 = document.querySelector(".close-button2");
+
+    function toggleModal2() {
+        modal2.classList.toggle("show-modal2");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal2) {
+            toggleModal2();
+        }
+    }
+
+    trigger2.addEventListener("click", toggleModal2);
+    closeButton2.addEventListener("click", toggleModal2);
+    window2.addEventListener("click", windowOnClick2);
+
+    
+
+     //Modal Box3//
+     var modal3 = document.querySelector(".modal3");
+     var trigger3 = document.querySelector(".trigger3");
+     var closeButton3 = document.querySelector(".close-button3");
+ 
+     function toggleModal3() {
+         modal3.classList.toggle("show-modal3");
+     }
+ 
+     function windowOnClick(event) {
+         if (event.target === modal3) {
+             toggleModal3();
+         }
+     }
+ 
+     trigger3.addEventListener("click", toggleModal3);
+     closeButton3.addEventListener("click", toggleModal3);
+     window3.addEventListener("click", windowOnClick3);

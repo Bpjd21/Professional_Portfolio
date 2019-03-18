@@ -7,11 +7,7 @@ body{
     font-family: 'Lora', 'Merriweather', 'sans-serif';
 }
 
-.MyPicture {
- max-width: 100vw;
- height: 50vh;
 
-}
 
 footer {
     display: grid;
@@ -63,6 +59,11 @@ footer a{
 
 .Skills{
     text-align: center;
+    padding: 1rem;
+}
+
+.AboutMePhoto{
+    text-align: center;
 }
 
 /* Recent Work Page Start*/
@@ -97,8 +98,31 @@ footer a{
 
 /*Start of About Me Page*/
 
-.AboutMePhoto{
+.AboutMeDetails{
     text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.ListOfMe{
+    align-self: center;
+}
+
+.ListOfMe li{
+    padding: 5px;
+}
+
+.WhoAmI{
+    text-align: center;
+    padding:2rem;    
+}
+
+.Resume{
+    text-align: center;
+    padding: 2rem;
 }
 
 /* Header */
@@ -479,3 +503,62 @@ footer a{
 
 }
 /* Carousel End */
+
+/*Modal Box*/
+.modal, .modal2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content, .modal-content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.ModalText, .ModalText2 {
+    font-size: 1rem;
+}
+.close-button, .close-button2 {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal, .show-modal2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.Education{
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.EducationTitle{
+    text-align: center;    
+}
+.ModalBox1, .ModalBox2{
+    padding: 1rem;
+}
